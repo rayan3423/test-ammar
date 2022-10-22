@@ -1,0 +1,61 @@
+<html>
+
+<!--------- TP 2 : CREATION DE FORMULAIRE HTML  ------------------------->
+
+<!------------------- Le 24/05/2022  ------------------------->
+<!------------------- Ammar YAHIAOUI ------------------------->
+<!------------------- Adil LAHLOU ----------------------------->
+
+
+<!--------- Partie 1 : CREATION DE FORMULAIRE << Formulaire.html >>  ------------------------->
+
+<head>
+        <title> Connexion </title>
+
+        <!------------------- declaration de CSS style1.css  ------------------------->
+
+        <link href="TP-CSS.css" media="all" rel="stylesheet" type="text/css" />
+ </head>
+<body>
+<fieldset> 
+        <!---------------------------- Titre  ---------------------------------------->
+        <h1 class="titre">Connexion</h1>
+        <p> Veuillez remplir ce formulaire pour vous connecter sur votre page de profil.</p>
+        <!------------------------ Debut du formulaire form  ------------------------->
+        <form action="groupe.html" name="form1" method="post">
+            
+                <b><label>Couriel : </label></b>
+                <input type="email"  placeholder="test@mail.ca" name="couriel" maxlength="30" minlength="5" class="champs_text"/>
+                                                                 
+                <br/><br/>
+                <b><label>Mot de passe : </label></b>                   
+                <input type="password" value="texte chache" name="mot_passe" class="champs_text"  />
+                         
+                <br/><br/>
+                <INPUT type="checkbox" name="case1" value="1" checked > Se rappeler de moi <br/>
+                <p>En se connectant, vous acceptez nous <a href="contrat.txt" target="_blank">termes et conditions</a> .</p>
+                                
+           
+                <!----------------------------- boutton d'envoie   ------------------------->
+                <table class="tab">
+                        <tr>
+                                <td nowrap>
+                                        <INPUT TYPE="reset" NAME="annuler" VALUE="Annuler" class="boutton_annuler" > 
+                                        
+                                </td>
+                                <td>
+                                        <INPUT TYPE="submit" NAME="submit1" VALUE="Connexion" class="boutton_submit"> 
+                                </td>
+        
+                        </tr>
+
+                </table>
+               
+        </form>
+</fieldset>   
+       
+
+</body>
+
+
+</html>
